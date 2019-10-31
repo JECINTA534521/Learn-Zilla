@@ -37,8 +37,9 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/moringaschool/Documents/moringa-school-projects/Learn-Zilla/virtual"
-export VIRTUAL_ENV
+
+VIRTUAL_ENV="/home/jecinta/Documents/Learn-Zilla/virtual"
+
 
 _OLD_VIRTUAL_PATH="$PATH"
 PATH="$VIRTUAL_ENV/bin:$PATH"

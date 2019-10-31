@@ -1,3 +1,3 @@
-export SECRET_KEY=learnzilla1234
+export SECRET_KEY=learnzilla
 
 python3.6 manage.py server
