@@ -1,14 +1,34 @@
 import os
 
 class Config:
+    '''
+    General configuration parent class
+    '''
+    
+    BOOKS_API_BASE_URL ='https://www.googleapis.com/books/v1/volumes/zyTCAlFPjgYC?&key={}'
+    BOOKS_API_KEY = os.environ.get('BOOKS_API_KEY')
     SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://brayooh:brian@localhost/programming'
+
 
 
 class ProdConfig(Config):
+    '''
+    Production  configuration child class
+
+    Args:
+        Config: The parent configuration class with General configuration settings
+    '''
     pass
 
 
 class DevConfig(Config):
+    '''
+    Development  configuration child class
+
+    Args:
+        Config: The parent configuration class with General configuration settings
+    '''
     DEBUG = True
 
 config_options = {
